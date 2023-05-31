@@ -16,13 +16,13 @@
 
 ![everybranch](https://github.com/hinokami27/SI_2023_lab2_215001/assets/106191814/da7821d1-0192-41ff-9f55-ed6dc83bb29f)
 
-tc1 = user("name",password?,email@gmail.com),allUsers("exuser","expswrd!","email@yahoo.com") - nov user
+TC1 = user("name",password?,email@gmail.com),allUsers("exuser","expswrd!","email@yahoo.com") - nov user
 
-tc2 = user==null - "Mandatory information missing!" exception
+TC2 = user==null - "Mandatory information missing!" exception
 
-tc3 = user("name","pswrd","email@email.com"),allUsers("name","pswrd","email@email.com") - postoecki user so nevaliden password
+TC3 = user("name","pswrd","email@email.com"),allUsers("name","pswrd","email@email.com") - postoecki user so nevaliden password
 
-tc4 = user(null,"pass word","emailgmail.com"),allUsers("name","pswrd","email@email.com") - setira username=email i nevaliden password poradi " "
+TC4 = user(null,"pass word","emailgmail.com"),allUsers("name","pswrd","email@email.com") - setira username=email i nevaliden password poradi " "
 
 ## Multiple condition
 
@@ -31,7 +31,8 @@ tc4 = user(null,"pass word","emailgmail.com"),allUsers("name","pswrd","email@ema
 1. T || X || X  user=null
 2. F || T || T  user("name",null,null)
 3. F || F || T  user("name","password?",null)
-4. F || T || F  user("name",null."email@gmail.com")
+4. F || T || F  user("name",null,"email@gmail.com")
 5. F || F || F  user("name","password?","email.gmail.com")
 
-
+## Unit tests
+За секој тест случај е направен тест кој има предвиден исход. На секој тест се предадени параметри со кои при извршување на програмата треба да се добие исходот кој го очекуваме.
