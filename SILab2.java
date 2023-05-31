@@ -36,11 +36,9 @@ public class SILab2 {
         if (user==null || user.getPassword()==null || user.getEmail()==null){                  //1
             throw new RuntimeException("Mandatory information missing!");                      //2
         }
-
         if (user.getUsername()==null){                                                         //3
             user.setUsername(user.getEmail());                                                 //4
         }
-
         int same = 1;                                                                          //5
         if (user.getEmail().contains("@") && user.getEmail().contains(".")) {                  //6
             same = 0;                                                                          //7
@@ -54,11 +52,9 @@ public class SILab2 {
                 }
             }
         }
-
         String specialCharacters="!#$%&'()*+,-./:;<=>?@[]^_`{|}";                              //14
         String password = user.getPassword();                                                  //15
         String passwordLower = password.toLowerCase();                                         //16
-
         if (passwordLower.contains(user.getUsername().toLowerCase()) || password.length()<8) { //17
             return false;                                                                      //18
         }
@@ -73,5 +69,4 @@ public class SILab2 {
         }
         return false;                                                                          //23
     }                                                                                          //24
-
 }
