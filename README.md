@@ -12,3 +12,26 @@
 
 37-28+2 = 11 
 
+## Every Branch
+
+![everybranch](https://github.com/hinokami27/SI_2023_lab2_215001/assets/106191814/da7821d1-0192-41ff-9f55-ed6dc83bb29f)
+
+tc1 = user("name",password?,email@gmail.com),allUsers("exuser","expswrd!","email@yahoo.com") - nov user
+
+tc2 = user==null - "Mandatory information missing!" exception
+
+tc3 = user("name","pswrd","email@email.com"),allUsers("name","pswrd","email@email.com") - postoecki user so nevaliden password
+
+tc4 = user(null,"pass word","emailgmail.com"),allUsers("name","pswrd","email@email.com") - setira username=email i nevaliden password poradi " "
+
+## Multiple condition
+
+(user==null || user.getPassword()==null || user.getEmail()==null)
+
+1. T || X || X  user=null
+2. F || T || T  user("name",null,null)
+3. F || F || T  user("name","password?",null)
+4. F || T || F  user("name",null."email@gmail.com")
+5. F || F || F  user("name","password?","email.gmail.com")
+
+
