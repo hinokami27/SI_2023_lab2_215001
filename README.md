@@ -1,7 +1,8 @@
 # Драган Голабоски 215001
 
 ## Control flow graph
-![cfg](https://github.com/hinokami27/SI_2023_lab2_215001/assets/106191814/91a78a01-79ed-4983-b07c-0376c7eca060)
+![cfg](https://github.com/hinokami27/SI_2023_lab2_215001/assets/106191814/2c0c17b1-9053-4c90-a609-4528330d6e8d)
+
 
 ## Цикломатска комплексност
 Број на ребра = 37
@@ -14,7 +15,8 @@
 
 ## Every Branch
 
-![everybranch](https://github.com/hinokami27/SI_2023_lab2_215001/assets/106191814/da7821d1-0192-41ff-9f55-ed6dc83bb29f)
+![everybranch](https://github.com/hinokami27/SI_2023_lab2_215001/assets/106191814/09680b56-d1b1-40d6-9a41-81a47f5c0c82)
+
 
 TC1 = user("name",password?,email@gmail.com),allUsers("exuser","expswrd!","email@yahoo.com") - nov user
 
